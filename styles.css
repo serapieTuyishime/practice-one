@@ -22,7 +22,10 @@
         @apply flex-grow flex gap-8;
     }
     .description{
-        @apply text-white  w-[28rem] grid gap-5 p-4;
+        @apply text-white w-[30rem] grid gap-4 p-8 content-center;
+    }
+    .description--text-light{
+        @apply text-black  ;
     }
     .description__title{
         font-size : 48px;
@@ -35,6 +38,51 @@
     .material-icons--blue{
         @apply text-primary;
     }
+    .insights{
+        @apply bg-gray-100 px-20 flex gap-4 pt-3;
+    }
+    .insight{
+        @apply text-primary gap-3 flex divide-x 
+    }
+    .insight__text{
+        @apply text-black overflow-hidden text-ellipsis w-56 h-20
+    }
+    .spotlight{
+        @apply text-black;
+        display: flex;
+        gap: 3rem;
+        justify-content: space-between;
+        height: 30rem;
+        grid-template-columns : 50% 50%;
+        width: 100%;
+
+    }
+    .spotlight--long{
+        height: 40rem;
+    }
+    .spotlight--short{
+        height: 21rem;
+    }
+    .sub-heading{
+        @apply uppercase w-1/2 mx-auto text-xl ;
+        text-align: center;
+    }
+    .blogs{
+        @apply h-screen flex;
+    }
+    .workspace{
+    }
+    .blog__desc{
+        @apply opacity-100 text-primary absolute top-[10rem] left-[3rem];
+    }
+    .video-area{
+        @apply font-bold grid;
+        align-text: center;
+        grid-template-columns: 40% 60%;
+        height: 28rem;
+
+    }
+
     
  
 }
