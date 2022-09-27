@@ -3,7 +3,42 @@
 @tailwind utilities;
 
 @layer components{
-    .title {
-        @apply font-bold  text-2xl;
+    .screen-1{
+        @apply bg-gradient-to-r from-black via-black to-indigo-900 h-[32rem] relative px-20 pt-24 ; 
     }
+    .header{
+        @apply grid gap-5 text-white z-40 absolute top-0 w-full;
+    }
+    .header__sign-ins{
+        @apply flex divide-x justify-end gap-3;
+    }
+    .navigation{
+        @apply flex gap-3 h-20  items-center; 
+    }
+    .navigation__image{
+        @apply h-full object-contain w-1/4; 
+    }
+    .navigation__links{
+        @apply flex-grow flex gap-8;
+    }
+    .description{
+        @apply text-white  w-[28rem] grid gap-5 p-4;
+    }
+    .description__title{
+        font-size : 48px;
+        line-height : 60px;
+    }
+    .description__link
+    {
+        @apply flex gap-3 items-center;
+    }
+    .material-icons--blue{
+        @apply text-primary;
+    }
+    
+ 
+}
+
+body{
+     font-family: "McKinsey Sans","Helvetica Neue",'Calibri','Corbel','Helvetica','Roboto','Droid','sans-serif'; 
 }

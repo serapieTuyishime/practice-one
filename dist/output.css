@@ -551,13 +551,116 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.title {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 700;
+.screen-1 {
+  position: relative;
+  height: 32rem;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #000;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgb(0 0 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #000, var(--tw-gradient-to);
+  --tw-gradient-to: #312e81;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 6rem;
 }
 
-.underline {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+.header {
+  position: absolute;
+  top: 0px;
+  z-index: 40;
+  display: grid;
+  width: 100%;
+  gap: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.header__sign-ins {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.header__sign-ins > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-x-reverse: 0;
+  border-right-width: calc(1px * var(--tw-divide-x-reverse));
+  border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+}
+
+.navigation {
+  display: flex;
+  height: 5rem;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.navigation__image {
+  height: 100%;
+  width: 25%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.navigation__links {
+  display: flex;
+  flex-grow: 1;
+  gap: 2rem;
+}
+
+.description {
+  display: grid;
+  width: 28rem;
+  gap: 1.25rem;
+  padding: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.description__title{
+  font-size : 48px;
+  line-height : 60px;
+}
+
+.description__link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.material-icons--blue {
+  --tw-text-opacity: 1;
+  color: rgb(31 182 255 / var(--tw-text-opacity));
+}
+
+.absolute {
+  position: absolute;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+body{
+  font-family: "McKinsey Sans","Helvetica Neue",'Calibri','Corbel','Helvetica','Roboto','Droid','sans-serif';
 }
