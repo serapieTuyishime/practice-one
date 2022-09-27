@@ -82,6 +82,21 @@
         height: 28rem;
 
     }
+    .footer-strip
+    {
+        @apply bg-gradient-to-r from-black via-black to-indigo-900 p-8 grid content-center justify-center gap-4 text-white my-5;
+    }
+    .footer{
+        @apply grid;
+        grid-template-columns: 50% 50%;
+    }
+    .links{
+        @apply grid gap-4 justify-items-end;
+    }
+    .links{
+        @apply grid gap-4 justify-items-start;
+    }
+    
 
     
  
