@@ -551,6 +551,12 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
